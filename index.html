@@ -6,7 +6,7 @@
   <title>My webPage</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
-  <link rel="icon" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
   
         <style>
             h1{
@@ -27,11 +27,24 @@
                 margin-right: 30%;
             }
            #divmenu {
+                
+                
+            }
+            .scrollable-box {
+  width: 300px; 
+  height: 200px;
+  overflow: auto; 
+  border: 3px solid #090000; 
                 margin-left: 1200px;
                 margin-right: 100px;
                 margin-right: 0;
-                
-            }
+}
+
+.item-list {
+  list-style: none; 
+  padding: 0;
+}
+
           
         </style>
     </head>
@@ -44,13 +57,15 @@
     <marquee><h2> Learn concepts @ making projects | Code is easy </h2></marquee>
     </div>
     
-    <div id="divmenu">
-       <a href="frontend.html"><h3>1.FrontEnd</h3></a> 
-        <h3>2.C# Programming Language</h3>
-        <h3>3.Dot NET Core</h3>
-        <h3>4.SQL</h3>
-        <h3>5.Cloud</h3>
-       <div>
+    <div class="scrollable-box">
+    <ul class="item-list">
+                     
+       <a href="frontend.html"><li>1.FrontEnd</li></a> 
+       <a href="CSharp.html"><li>2.C# Programming Language</li></a>
+       <a href="DotNet.html"> <li>3.Dot NET Core</li></a>
+       <a href="SQL.html"><li>4.SQL</li></a>
+       <a href="cloud.html"><li>5.Cloud</li></a>
+      <div>
 
    
 </body>
