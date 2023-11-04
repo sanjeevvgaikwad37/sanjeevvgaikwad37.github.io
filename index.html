@@ -26,19 +26,42 @@
                 margin-left: 30%;
                 margin-right: 30%;
             }
-           #divmenu {
-                
-                
+            form {
+             margin-left: 1200px;
+             margin-right: 100px;
             }
-            .scrollable-box {
-  width: 300px; 
-  height: 200px;
-  overflow: auto; 
-  border: 3px solid #090000; 
-                margin-left: 1200px;
-                margin-right: 100px;
-                margin-right: 0;
+          
+            .menu-container {
+    display: flex;
 }
+
+.menu-item {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    margin: 10px;
+    border: 2px solid #000;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.item1 {
+    background-color: #ffcc00; 
+}
+
+.item2 {
+    background-color: #33cc33; 
+}
+
+.item3 {
+    background-color: #3366ff; 
+}
+.item4 {
+    background-color: #ffdd33; 
+
+
 
 .item-list {
   list-style: none; 
@@ -53,21 +76,30 @@
     <div id="div1">
     <h1>Hello World ! "My name is Sanjeev Gaikwad !!"</h1>
     </div>
-    <div id="div2">
-    <marquee><h2> Learn concepts @ making projects | Code is easy </h2></marquee>
-    </div>
-    
-    <div class="scrollable-box">
-    <ul class="item-list">
-                     
-       <a href="frontend.html"><li>1.FrontEnd</li></a> 
-       <a href="java.html"><li>2.java</li></a>
-       <a href="Framework.html">3.Frameworks <li></li></a>
-       <a href="SQL.html"><li>4.SQL</li></a>
-       <a href="cloud.html"><li>5.Cloud</li></a>
-      <div>
 
-   
+    <div id="div2">
+    </h2><marquee><h2> &lt; Learn concepts @ making projects | Code is easy &gt;</h2></marquee>
+   </div>
+   <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+    
+<div class="menu-container">
+    <div class="menu-item item1">Front End</div>
+    <div class="menu-item item2">Java</div>
+    <div class="menu-item item3">SQL</div>
+    <div class="menu-item item4">Cloud</div>
+</div>
+</div>
+
+
+        
 </body>
 
 </html>
