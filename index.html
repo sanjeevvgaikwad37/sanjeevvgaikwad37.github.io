@@ -31,42 +31,29 @@
              margin-right: 100px;
             }
           
-            .menu-container {
-    display: flex;
-}
 
-.menu-item {
-    width: 150px;
-    height: 150px;
+
+.menutable {
+
+    width: 600px;
+    height: 240px;
     text-align: center;
-    line-height: 150px;
-    margin: 10px;
-    border: 2px solid #000;
     cursor: pointer;
     font-family: Arial, sans-serif;
     font-weight: bold;
-}
+    margin-left: 200px;
+    margin-top: 150px;
+    border: 5px solid;
+    font-size: x-large
 
-.item1 {
-    background-color: #ffcc00; 
-}
-
-.item2 {
-    background-color: #33cc33; 
-}
-
-.item3 {
-    background-color: #3366ff; 
-}
-.item4 {
-    background-color: #ffdd33; 
+   }
+   .projects{
+    background-color: rgb(196, 176, 96);
+    border: 1px solid;
+    text-align: center;
+   }
 
 
-
-.item-list {
-  list-style: none; 
-  padding: 0;
-}
 
           
         </style>
@@ -89,14 +76,25 @@
 
     <input type="submit" value="Submit">
 </form>
-    
-<div class="menu-container">
-   <a href="frontend.html" target="_blank"><div class="menu-item item1">Front End</div></a> 
-  <a href="java.html" target="_blank"> <div class="menu-item item2">Java</div></a> 
-   <a href="SQL.html" target="_blank"><div class="menu-item item3">SQL</div></a> 
-  <a href ="cloud.html" target="_blank"><div class="menu-item item4">Cloud</div></a>  
-</div>
-</div>
+
+<table border="1" class="menutable">
+    <colgroup>
+        <col style="width: 50%;">
+        <col style="width: 50%;">
+    </colgroup>
+    <tr class="projects">
+        <th colspan="2">Projects with Source code</th>
+    </tr>
+    <tr>
+   <td> <a href="frontend.html" target="_blank">Front End</a></td>
+    <td><a href="java.html" target="_blank"> Java</a></td>
+    </tr>
+    <tr>
+   <td><a href="SQL.html" target="_blank">SQL</a></td>
+   <td><a href ="cloud.html" target="_blank"></a>Cloud</a></td>
+    </tr>
+</table>
+
 
 
         
